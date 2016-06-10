@@ -1,0 +1,22 @@
+<template name="layout">
+
+            <div id="content">
+
+                <!-- top -->
+                <div id="top">
+                    <h1 id="logo">Food<span>review</span></h1>
+                    <ul id="menu">
+                        <li><a class="current" href="{{pathFor 'home'}}">Home</a></li>
+                        <li><a class="current" href="{{pathFor 'list'}}">Foodreview list</a></li>
+                        <li><a class="current" href="{{pathFor 'notice'}}">Notice</a></li>
+
+                    </ul>
+                </div>
+                <!-- /top -->
+
+                {{>yield}}
+                <div id="footer">
+                    <p>&copy; 2016 <a href="#">웹프로그래밍 Project</a> &middot; All Rights Reserved &middot; </p>
+                </div>
+            </div>
+</template>
