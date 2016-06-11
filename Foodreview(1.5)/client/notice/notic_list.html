@@ -1,0 +1,23 @@
+<template name="notice">
+    <table class="table table-condensed table-striped table-bordered table-hover" style="color:black; text-align: center">
+        <tbody>
+        <tr>
+            <td class="deep_section">제목</td>
+            <td>글쓴이</td>
+            <td>날짜</td>
+            <td> </td>
+        </tr>
+
+        {{#each noticeList}}
+            {{>notice_item}}
+        {{/each}}
+        </tbody>
+    </table>
+    {{#if find}}
+        <button type="button" class="btn btn-default btn-bordered notice-add" style="float: right; margin-bottom: 4px;">글쓰기</button>
+    {{/if}}
+
+    {{>notice_create}}
+
+
+</template>

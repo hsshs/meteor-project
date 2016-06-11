@@ -1,0 +1,17 @@
+<template name="dongais">
+    <ul>
+        <li class="mm"><a href="{{pathFor 'list'}}">전체</a></li>
+        <li class="mm"><a href="{{pathFor 'chiken'}}">치킨</a></li>
+        <li class="mm"><a href="{{pathFor 'pizza'}}">피자</a></li>
+        <li class="mm"><a href="{{pathFor 'fastfood'}}">패스트푸드</a></li>
+        <li class="mm" style="background: lightcyan;"><a href="{{pathFor 'dongais'}}">돈까스</a></li>
+        <li class="mm"><a href="{{pathFor 'iokbal'}}">족발</a></li>
+        <li class="mm"><a href="{{pathFor 'china'}}">중국집</a></li>
+        <li class="mm"><a href="{{pathFor 'korea'}}">한식,일식</a></li>
+    </ul>
+        {{#each search}}
+            {{>find_food}}
+        {{/each}}
+
+
+</template>

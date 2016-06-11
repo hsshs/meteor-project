@@ -1,0 +1,18 @@
+<template name="notice_item">
+    <style>
+
+    </style>
+    <tr class="board_list">
+        <!--<td>{{no}}</td>-->
+        <td class="deep_section" style="cursor: pointer">{{title}}</td>
+        <td>{{writer}}</td>
+        <td>{{day}}</td>
+        <td>
+            {{#if find}}
+            <button type="button" class="btn btn-default btn-small" >
+                <span class="glyphcion glyphcion-star" aria-hidden="true"></span>Delete
+            </button>
+            {{/if}}
+        </td>
+    </tr>
+</template>
