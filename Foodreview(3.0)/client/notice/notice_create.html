@@ -1,0 +1,23 @@
+<template name="notice_create">
+    <div class="create_div">
+        <table class="table-bordered" style="color:black; border: #333 3px solid">
+            <tbody>
+                <tr>
+                    <td>글제목 : <input type="text" class="board_title" style="width:60%; text-align: center" placeholder="글제목을 입력하세요."/></td>
+                </tr>
+
+                <tr>
+                    <td>글쓴이 :<input type="text" class="board_writer" style="width:10% float:left;"/> </td>
+                </tr>
+
+                <tr>
+                        <td>내용 : <textarea name="board" id="" cols="110" rows="10" class="board_section" style="width: 100%"> </textarea></td>
+                </tr>
+
+                {{#if currentUser}}
+                <input type="button" class="addBtn" style="float: right; margin-bottom: 4px;" value="등록하기"/>
+                {{/if}}
+            </tbody>
+        </table>
+    </div>
+</template>

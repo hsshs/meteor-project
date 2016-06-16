@@ -1,0 +1,18 @@
+<template name="notice_item">
+    <style>
+
+    </style>
+    <tr class="board_list">
+
+        <td style="cursor: pointer">{{title}}</td>
+        <td>{{writer}}</td>
+        <td>{{day}}</td>
+        <td>{{section}}</td>
+        <td>
+            {{#if find}}
+            <input type="button" class="delBtn" value="Delete" />
+
+            {{/if}}
+        </td>
+    </tr>
+</template>
